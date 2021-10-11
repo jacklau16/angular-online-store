@@ -10,6 +10,7 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -22,6 +23,7 @@ import { ShippingComponent } from './shipping/shipping.component';
       { path: 'shipping', component: ShippingComponent },
 
     ]),
+    HttpClientModule,
   ],
   declarations: [
     AppComponent,
